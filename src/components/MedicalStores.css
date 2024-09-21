@@ -1,0 +1,183 @@
+/* src/components/MedicalStore.css */
+.order-btn, .detail-btn {
+  padding: 8px 12px;
+  background-color: rgb(35, 119, 245);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.detail-btn {
+  padding: 8px 12px;
+  background-color: rgb(216, 219, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.order-btn:hover {
+  background-color: #0022e0;
+}
+
+.detail-btn:hover {
+  background-color: #d4bf02b2;
+}
+
+.medical-store-container {
+  padding: 40px;
+  background-color: #f4f4f4;
+  height: 100vh;
+}
+
+.add-store-btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-store-btn:hover {
+  background-color: #0056b3;
+}
+
+.medical-store-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.medical-store-table th, .medical-store-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.update-btn, .delete-btn, .detail-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.update-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn, .cancel-btn {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.confirmation {
+  color: green;
+  margin-top: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .medical-store-container {
+    padding: 20px; /* Reduce padding for mobile */
+  }
+
+  .medical-store-table th, .medical-store-table td {
+    padding: 8px; /* Reduce table cell padding */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .modal-content {
+    width: 100%; /* Full width for modal on mobile */
+    max-width: 350px; /* Set a max width */
+    padding: 15px; /* Reduce padding for mobile */
+  }
+
+  .add-store-btn {
+    padding: 8px 15px; /* Smaller button padding for mobile */
+  }
+
+  .order-btn, .detail-btn, .update-btn, .delete-btn {
+    font-size: 12px; /* Smaller font size for buttons */
+    padding: 6px 10px; /* Smaller padding */
+  }
+
+  .submit-btn, .cancel-btn {
+    font-size: 14px; /* Smaller font size */
+    padding: 8px 10px; /* Reduce padding */
+    margin-right: 5px; /* Adjust margin for mobile */
+  }
+}

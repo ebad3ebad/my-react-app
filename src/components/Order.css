@@ -1,0 +1,149 @@
+/* Styles for the order page container */
+.order-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .product-input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .product-input-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .product-input-group input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  .product-input-group input[type="number"]::-webkit-outer-spin-button,
+  .product-input-group input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Button styles */
+  .add-more-btn, .submit-btn,.cancel-btn {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .add-more-btn {
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .add-more-btn:hover {
+    background-color: #4cae4c;
+  }
+  
+  .submit-btn {
+    background-color: #0275d8;
+    color: white;
+  }
+  
+  .submit-btn:hover {
+    background-color: #025aa5;
+  }
+  
+  
+  /* Styles for error and confirmation messages */
+  .error {
+    color: #d9534f;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .confirmation {
+    color: #5cb85c;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  /* Styles for suggestions dropdown */
+  .suggestions-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Hide scrollbars for better UX */
+  .suggestions-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .suggestions-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
+  .suggestions-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  /* Mobile responsive adjustments */
+  @media (max-width: 600px) {
+    .order-page {
+      padding: 10px;
+    }
+  
+    .product-input-group input {
+      font-size: 14px;
+      padding: 6px;
+    }
+  
+    .add-more-btn, .submit-btn {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+  }
+  
