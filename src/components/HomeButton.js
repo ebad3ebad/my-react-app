@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const HomeButton = () => {
+  const navigate = useNavigate();
   return (
     <button 
       style={{
@@ -15,7 +18,7 @@ const HomeButton = () => {
         top: '5px',
         left: '50px'
       }}
-      onClick={() => window.location.href = 'http://localhost:3001/dashboard'}
+      onClick={() => navigate('/dashboard')}
     >
       Home
     </button>
